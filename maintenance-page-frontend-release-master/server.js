@@ -1,0 +1,1 @@
+const express=require('express');const server=express();var path=require('path');const port=8080;server.use(express.static('app'));server.get('/',(req,res)=>{res.sendFile(path.join(__dirname+'/index.html'))});server.listen(port,()=>{console.log('NODE APP RUNNING IN PORT 8080')})
